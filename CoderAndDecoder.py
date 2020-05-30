@@ -52,8 +52,8 @@ def crypt (lets_go):
 #	Gui Code
 
 app = tk.Tk() 
-WINDOWWIDTH = 300
-app.geometry('{}x150'.format(WINDOWWIDTH))
+WINDOWWIDTH = 400
+app.geometry('{}x{}'.format(WINDOWWIDTH,int(WINDOWWIDTH/2)))
 
 #	Label
 labelTop = tk.Label(app, text = "What do you want to do?")
