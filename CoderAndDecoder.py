@@ -3,6 +3,32 @@ from tkinter import messagebox, simpledialog, Tk
 root = Tk()
 
 Encripting_Codes = {
+    "Z":"d",
+    "Y":"i",
+    "X":"l",
+    "W":"j",
+    "V":"4",
+    "U":"w",
+    "T":"o",
+    "S":"p",
+    "R":"z",
+    "Q":"y",
+    "P":"3",
+    "O":"g",
+    "N":"5",
+    "M":"t",
+    "L":"x",
+    "K":"i",
+    "J":"0",
+    "I":"s",
+    "H":"q",
+    "G":"7",
+    "F":"k",
+    "E":"9",
+    "D":"f",
+    "C":"%",
+    "B":"$",
+    "A":"?",
     "a": "8",
     'b': ",",
     "c": ".",
@@ -14,8 +40,8 @@ Encripting_Codes = {
     'i': "_",
     'j': "+",
     'k': "-",
-    'l': "(",
-    'm': ")",
+    'l': ")",
+    'm': "(",
     'n': "#",
     'o': "6",
     'p': "@",
@@ -32,6 +58,32 @@ Encripting_Codes = {
     ' ': '  ',
 }
 Decripting_codes = {
+    "?": "A",
+    "$": "B",
+    "%": "C",
+    "f": "D",
+    "9": "E",
+    "k": "F",
+    "7": "G",
+    "q": "H",
+    "s": "I",
+    "0": "J",
+    "i": "K",
+    "x": "L",
+    "t": "M",
+    "5": "N",
+    "g": "O",
+    "3": "P",
+    "y": "Q",
+    "z": "R",
+    "p": "S",
+    "o": "T",
+    "w": "U",
+    "4": "V",
+    "j": "W",
+    "l": "X",
+    "i": "Y",
+    "d": "Z",
     "8": "a",
     ",": "b",
     ".": "c",
@@ -58,7 +110,7 @@ Decripting_codes = {
     "/": "x",
     "&": "y",
     "!": "z",
-    ' ': "  ",
+    ' ': " ",
 }
 
 #decript
@@ -90,6 +142,6 @@ def do (command):
     elif command == 'decode':
         decript ('decipting')
     else:
-        messagebox.showinfo('Error', 'Error')
+        messagebox.showinfo('Error', 'Sorry I can only code and decode messages')
 
 do (What_to_do)
